@@ -10,7 +10,7 @@
     <div class="hidden sm:block">
       <div class="border-b border-gray-200">
         <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-          <a v-for="tab in tabs" :key="tab.name" :href="tab.href" :class="[tab.current ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300', 'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm']" :aria-current="tab.current ? 'page' : undefined">
+          <a v-for="tab in tabs" :key="tab.name" :href="tab.href" :class="[tab.current ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300', 'whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm']" :aria-current="tab.current ? 'page' : undefined">
             {{ tab.name }}
           </a>
         </nav>
@@ -22,7 +22,7 @@
 
 <script setup>
 const tabs = [
-  { name: 'Gestión de productos', href: '#', current: false },
+  { name: 'Gestión de productos', href: '/product/lists', current: false },
   { name: 'Editor de productos', href: '/product/editor', current: false }
 ]
 </script>
